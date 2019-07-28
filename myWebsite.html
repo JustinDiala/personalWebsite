@@ -4,8 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
     <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
     <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
@@ -18,20 +18,13 @@
 
 <body style="margin: 0;">
     <div id="large-header" class="large-header">
-
-        <div class="main-title buttonsFrontPage">
-            <p id="aboutMeText" ></p>
-        </div>
-        <div class="main-title buttonsFrontPage">
-            <p id="projectsText"></p>
-        </div>
-        <div class="main-title buttonsFrontPage">
-            <p id="contactText"></p>
-        </div>
-
+        <a id="aboutMeText" class="main-title buttonsFrontPage" href="aboutMe.html"></a>
+        <a id="projectsText" class="main-title buttonsFrontPage"></a>
+        <a id="contactText" class="main-title buttonsFrontPage"></a>
         <canvas id="demo-canvas"></canvas>
         <p class="main-title" id="quote">“What we know is not much. What we don't know is enormous.” </p>
-        <h3 class="main-title" id="quoteAuthor" style="transform: translate(50px, 50px); font-family: 'Pinyon Script', cursive;">-
+        <h3 class="main-title" id="quoteAuthor"
+            style="transform: translate(50px, 50px); font-family: 'Pinyon Script', cursive;">-
             Pierre-Simon Laplace</h3>
     </div>
 </body>

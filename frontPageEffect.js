@@ -1,30 +1,64 @@
 
-setTimeout(function() {
+$('document').ready(function () {
 
-    $("#quote").fadeOut("slow");
-    $("#quoteAuthor").fadeOut("slow");
+    var aboutMe = $("#aboutMeText");
+    var contactText = $("#contactText");
+    var projectsText = $("#projectsText");
 
-    setTimeout(function() {
+    setTimeout(function () {
 
-        $(".buttonsFrontPage").fadeOut(function() {
+        $("#quote").fadeOut("slow");
+        $("#quoteAuthor").fadeOut("slow");
 
-            $("#aboutMeText").text("About Me");
-            $("#aboutMeText").animate({
-                'marginLeft': "-=160px"
-            }, 250, "linear");
+        setTimeout(function () {
 
-            $("#projectsText").text("Projects");
-            
-            $("#contactText").text("Contact");
-            $("#contactText").animate({
-                'marginLeft': "+=160px"
-            }, 250, 'linear');
+            $(".buttonsFrontPage").fadeOut(function () {
 
-        }).fadeIn("slow");
+                aboutMe.text('About Me');
+                aboutMe.animate({
+                    'marginLeft': "-=2em"
+                }, 250, "linear");
 
-    }, 1000);
+                projectsText.text("Projects");
 
-}, 5000);
+                contactText.text("Contact");
+                contactText.animate({
+                    'marginLeft': "+=2em"
+                }, 250, 'linear');
+
+            }).fadeIn("slow");
+
+        }, 1000);
+
+    }, 5000);
+
+    // var transitionEffect = Barba.BaseTransition.extend({
+
+    //     start: function() {
+    //         this.newContainerLoading.then(val => this.fadeIncontent($(this.newContainer)));
+
+    //     },
+    //     fadeInNewcontent: function(nc) {
+    //         nc.hide();
+
+    //         $(this.oldContainer).fadeOut(1000).promise().done(() => {
+
+    //             nc.css('visibility', 'visible');
+    //             nc.fadeIn(1000, function() {
+    //                 _this.done();
+    //             })
+    //         });
+    //     }
+    // });
+
+    // Barba.Pjax.getTransition = function() {
+    //     return transitionEffect
+    // }
+
+    // Barba.Pjax.start();
+
+
+});
 
 (function() {
 
