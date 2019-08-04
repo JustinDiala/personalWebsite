@@ -1,0 +1,19 @@
+body {
+    background-color: #042f4b
+}
+
+.aboutMeHeader {
+    font-family: "Limelight", cursive;
+    color: #fff6da;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 8px 1px #021D2F;
+}
+
+.horizontalLine {
+
+    border: 1px dashed #ed1250;
+    margin-top: -60px;
+    width: 400px
+
+}
